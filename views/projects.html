@@ -4,38 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Bichof</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="/js/utils.js"></script>
-    <link rel="stylesheet" href="/css/commons.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/itens.css">
+    <link rel="shortcut icon" href="/images/favicon/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
-        <div class="name typewriter" id="name">
-            <h1>Daniel Bichof</h1>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/about">About me</a></li>
-                <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="root-container">
+        <div class="sidebar">
+            <div class="title">
 
-    <div class="container">
-        <h2>
-            Projects
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus culpa quas nihil exercitationem
-            quisquam voluptas voluptatem deleniti necessitatibus, quaerat, accusantium autem alias sed, quis voluptatum
-            facere ratione minima nobis.</p>
-    </div>
-    <footer>
-        <div class="footer">
-            2023 - Daniel Bichof
+            </div>
+            <nav class="nav">
+                <ul class="list-navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">home.html</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/projects">projects.css</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">about.js</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </footer>
+        <div class="projects">
+            <h2 class="info">
+                Projects
+            </h2>
+            <div class="content-projects">
+                <span class="project-item">
+                    <img src="/images/github-mark/github-mark-white.png" width="30">
+                    <span class="project-name">Blog to share knowledge </span>
+                </span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

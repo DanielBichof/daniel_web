@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/', express.static(path.join(__dirname, '../views')));
 const publicPath = path.resolve(__dirname, '../public');
 app.use(express.static(publicPath));
+app.use('public', express.static(publicPath));
 
 
 // check out the example code in the `./routes/example.js` file.
