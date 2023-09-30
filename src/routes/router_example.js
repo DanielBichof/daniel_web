@@ -1,4 +1,5 @@
 // how to use a separate file in express
+import { getStaticRoute, getStaticRouteScript } from '../common/commons.js'
 
 import express from "express";
 
@@ -11,5 +12,7 @@ export { router as ExampleRouter };
 // it's a good idea to only set routes under a specific path for each router,
 // so it's easier to keep track of which router handles which routes
 router.get("/exemple", (req, res) => {
-  res.send("This is an example of how to use a separate file in express");
+  // res.send("This is an example of how to use a separate file in express");
+  const filePath = getStaticRoute("home.html");
+  res.sendFile(filePath);
 });

@@ -1,11 +1,17 @@
 import express from "express";
+import { fileURLToPath } from 'url';
+import path from "path";
 
 const app = express();
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, '../public')));
+app.use('/', express.static(path.join(__dirname, '../views')));
+const publicPath = path.resolve(__dirname, '../public');
+app.use(express.static(publicPath));
+
 
 // check out the example code in the `./routes/example.js` file.
 // You can use this code to separate your routes into different files
@@ -20,6 +26,10 @@ app.use("/", homeRouter);
 app.use("/", ExampleRouter);
 app.use("/projects", projectsRouter);
 app.use("/", aboutRouter);
+app.get('/home', (req, res) => {
+  res.sendFile(path.join(__dirname, '../views', 'index.html'));
+});
+
 
 // Middleware is a function that runs on every request that is sent to your app.
 // It can be used to modify the request or response objects, or to run some code
@@ -76,9 +86,6 @@ app.post("/post", (req, res) => {
   res.json({ "Choo Choo": "Welcome to your Express app 🚅", body: req.body });
 });
 
-
-// app.use(express.static(path.join(__dirname, 'views')));
-// app.use(express.static(path.join(__dirname, 'public', 'stylesheets')));
 
 
 // the port that the process listens on is automatically set by railway,
