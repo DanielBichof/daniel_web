@@ -1,0 +1,65 @@
+.sidebar {
+  background: var(--sidebar-bg);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 18em;
+  padding: 1.6rem 1rem;
+}
+
+
+.title p {
+  color: var(--sidebar-title);
+  font-family: "Source Sans Pro", "Microsoft Yahei", "Fira Code", monospace;
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding: 0 1rem;
+}
+
+.list-navbar {
+}
+
+.list-navbar {
+  font-size: larger;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  inline-size: none;
+  color: inherit;
+}
+
+.nav-item a
+{
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--links);
+}
+
+.list-navbar {
+  padding: 0;
+  /* display: flex;
+  align-items: center; */
+}
+
+.nav-item {
+  margin: 0;
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-item a:hover {
+  color: var(--links-active);
+}
+
+.list-navbar,
+.nav-item {
+  margin: 0;
+}
+.nav {
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+}

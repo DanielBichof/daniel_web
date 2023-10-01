@@ -1,0 +1,56 @@
+.projects {
+  font-family: "Source Sans Pro", "Microsoft Yahei", monospace;
+  margin: 4rem;
+}
+
+.projects .info {
+  font-size: 2rem;
+  margin: 0 0.1rem 0.4rem 0;
+}
+
+.project-box {
+  border-left: 1px solid #2e2e2e;
+  margin: 1.2rem 1rem;
+  padding: 1.8rem;
+}
+
+.project-item {
+  margin-bottom: 1rem;
+}
+
+.project-name a {
+  /* font-weight: 400; */
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.project-item-title {
+  padding-bottom: 1rem;
+}
+
+.content-projects {
+  padding: 0 2.8rem;
+}
+
+.project-item-title {
+  display: flex;
+  align-items: center;
+}
+
+.project-item-title a {
+  font-size: 2rem;
+  padding: 0 1rem;
+  text-decoration: none;
+
+  /* color: #2e2e2e; */
+
+  font-family: "Source Sans Pro", "Microsoft Yahei", monospace;
+}
+
+.project-item .description {
+  font-size: 1.2rem;
+  color: var(--description);
+}
+.project-item .description a {
+  text-decoration: none;
+}

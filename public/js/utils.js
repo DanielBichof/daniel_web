@@ -30,17 +30,34 @@ var setPageName = () => {
 
 }
 
+let setFavcon = () => {
+
+    var link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+        link = document.createElement('link');
+        link.rel = 'icon';
+        document.head.appendChild(link);
+    }
+    link.href = '/images/favicon/favicon-32x32.png';
+}
+
+let loadSpin = () => {
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.loader');
+        loader.classList.add('loader-hidden');
+        loader.addEventListener('transitionend', () => {
+            document.removeChild('loader')
+        });
+    }
+    )
+}
+
 let main = () => {
     setTitle();
+    setFooterDate();
+    setFavcon();
     setPageName();
+    loadSpin();
 }
 
 main();
-
-var link = document.querySelector("link[rel~='icon']");
-if (!link) {
-    link = document.createElement('link');
-    link.rel = 'icon';
-    document.head.appendChild(link);
-}
-link.href = '/images/favicon/favicon-32x32.png';
