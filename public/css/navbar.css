@@ -5,11 +5,11 @@
   align-items: center;
   flex-direction: column;
   width: 18em;
-  padding: 1.6rem 1rem;
+  padding: 2rem 0;
 }
 
 
-.title p {
+.title-bar p {
   color: var(--sidebar-title);
   font-family: "Source Sans Pro", "Microsoft Yahei", "Fira Code", monospace;
   font-size: 3.2rem;

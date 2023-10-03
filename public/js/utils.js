@@ -24,7 +24,7 @@ var setPageName = () => {
     console.log(titleName);
 
     window.addEventListener("load", (event) => {
-        var item = document.querySelector('.title');
+        var item = document.querySelector('.title-bar');
         item.innerHTML = `<p>${titleName}</p>`
     });
 

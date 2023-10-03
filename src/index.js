@@ -20,13 +20,16 @@ app.use(express.static(publicPath));
 app.use('public', express.static(publicPath));
 
 app.use("/exemple", ExampleRouter);
+app.get('/exemple', function (req, res) {
+  res.redirect('/');
+});
 
 app.use("/", homeRouter);
 app.use("/about", aboutRouter);
 app.use("/projects", projectsRouter);
 
 app.get('/home', (req, res) => {
-  res.sendFile(path.join(__dirname, '../views', 'index.html'));
+  res.sendFile(path.join(__dirname, '../views', 'home.html'));
 });
 
 app.use((req, res, next) => {

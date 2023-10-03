@@ -4,7 +4,7 @@ import express from "express";
 var router = express.Router();
 export { router as aboutRouter };
 
-router.get('/', function (req, res, next) {
+router.get('/', function (req, res) {
   const filePath = getStaticRoute("about.html");
   res.sendFile(filePath);
 });
