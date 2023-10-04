@@ -55,7 +55,3 @@ color: var(--links-active);
   font-size: 1.2rem;
   color: var(--description);
 }
-
-.project-item .description a {
-  text-decoration: none;
-}

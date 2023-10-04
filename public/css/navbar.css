@@ -1,11 +1,9 @@
 .sidebar {
   background: var(--sidebar-bg);
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-
   flex-direction: column;
-  width: 18em;
+  width: 25em;
   padding: 2rem 0;
 }
 
@@ -24,14 +22,12 @@
 }
 
 .list-sidebar {
-}
-
-.list-sidebar {
   font-size: larger;
   font-weight: bold;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   inline-size: none;
   color: inherit;
+  padding: 0;
 }
 
 .sidebar-item a {
@@ -40,12 +36,6 @@
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--links);
-}
-
-.list-sidebar {
-  padding: 0;
-  /* display: flex;
-  align-items: center; */
 }
 
 .sidebar-item {
@@ -62,6 +52,7 @@
 .sidebar-item {
   margin: 0;
 }
+
 .nav {
   margin: 0;
   display: block;

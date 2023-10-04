@@ -62,9 +62,7 @@ function loadSpin() {
         const loader = document.querySelector(".loader");
         loader.classList.add("loader-hidden");
         loader.addEventListener("transitioned", () => {
-            document
-                .querySelector(".root-container")
-                .removeChild(document.querySelector(".loader"));
+            document.removeChild(document.querySelector(".loader"));
         });
     });
 }
