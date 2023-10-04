@@ -2,11 +2,12 @@
   --nav-background-color: #1e1e22;
   /* --sidebar-bg: radial-gradient(circle, #242424 0%, #1a1d2b 100%); */
   --sidebar-bg: linear-gradient(
-    40deg,
-    #1b1e2a 33%,
-    #1d2029 49%,
-    #222326 91%,
-    #242424 106%
+    240deg,
+    #1b1e2a 30%,
+    #1d2029 40%,
+    #22242c 65%,
+    #222326 90%,
+    #1f2022 100%
   );
   --sidebar-title: rgba(134, 133, 133, 0.99);
   --main-bg: rgb(27, 27, 30);
@@ -14,12 +15,14 @@
   --h2: #be3144;
   --white-text: #f2f2f2;
   --main-border-color: rgb(44, 45, 45);
-  --description: #929292;
+  --description: #a5a5a5;
+  --text: #c2c4c3;
   --description-name: #2c6a3f;
   --green-text: #445d48;
   --dark-green-text: #064635;
   --ligth-green-text: #519259;
   --links: #9e9b9b;
+  --link-title: #b4c5db;
   --links-active: #f1f7f8;
 }
 
@@ -27,10 +30,7 @@ html {
   font-size: 14px; /* Sets the base font size to 16px */
 }
 
-.root-container {
+.root-container, *{
   color: var(--white-text);
 }
 
-a {
-  color: var(--white-text);
-}

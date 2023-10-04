@@ -25,6 +25,7 @@
 }
 
 .project-item-title {
+  color: var(--link-title);
   padding-bottom: 1rem;
 }
 
@@ -41,16 +42,20 @@
   font-size: 2rem;
   padding: 0 1rem;
   text-decoration: none;
-
-  /* color: #2e2e2e; */
-
+  color: var(--link-title);
   font-family: "Source Sans Pro", "Microsoft Yahei", monospace;
+  transition: color 0.4s;
+}
+
+.project-item-title a:hover {
+color: var(--links-active);
 }
 
 .project-item .description {
   font-size: 1.2rem;
   color: var(--description);
 }
+
 .project-item .description a {
   text-decoration: none;
 }

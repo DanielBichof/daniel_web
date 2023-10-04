@@ -7,6 +7,7 @@ import { homeRouter } from './routes/home.js';
 import { ExampleRouter } from "./routes/router_example.js";
 import { projectsRouter } from "./routes/projects.js";
 import { aboutRouter } from "./routes/about.js";
+import { xpRouter } from "./routes/experience.js";
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.get('/exemple', function (req, res) {
 app.use("/", homeRouter);
 app.use("/about", aboutRouter);
 app.use("/projects", projectsRouter);
+app.use("/experience", xpRouter);
 
 app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname, '../views', 'home.html'));
