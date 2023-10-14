@@ -50,18 +50,7 @@ app.use((req, res, next) => {
   });
   // the next function is a callback that tells express to move on to the next middleware or route handler
   next();
-});
-
-
-
-app.get("/json", (req, res) => {
-  res.json({ "Choo Choo": "Welcome to your Express app 🚅" });
-});
-
-app.post("/", (req, res) => {
-  res.json({ "Choo Choo": "Welcome to your Express app 🚅", body: req.body });
-});
-
+}); 
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
