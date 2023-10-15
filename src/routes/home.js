@@ -8,7 +8,7 @@ export { router as homeRouter };
 
 
 router.get('/', function (req, res, next) {
-  const filePath = getStaticRoute("home.html");
+  const filePath = getStaticRoute("home.html"); // *.html muda em cada rota
   res.sendFile(filePath);
 });
 
